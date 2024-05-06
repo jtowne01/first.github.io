@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+Project Part 1
+City of Charlotte
+   
+   Filename: charlotte_layout.css
+
+*/
+
+/* Use both block and floating elements */
+nav.horizontalNavigation {
+    background-color: #0080c0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.horizontalNavigation h1 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+nav.horizontalNavigation ul {
+    list-style-type: none;
+}
+
+nav.horizontalNavigation ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav.horizontalNavigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav.horizontalNavigation ul li a:hover {
+    background-color: #004080;
+}
+/* Create a floated layout */
+    .image-with-border {
+        border: 2px solid #000000; 
+        padding: 10px; 
+        max-width: 100%; 
+		
+/* Create a grid layout */		
+	.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 30%; 
+    margin: 10px;
+}
+
+
+/* Experiment with relative and absolute positioning */
+@media screen and (max-width: 768px) {
+    .item {
+        flex-basis: 100%; /* Relative sizing within flexbox */
+    }
+

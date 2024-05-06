@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Project Part 1
+   Jason Towne
+   3/24/2024
+   Filename: charlotte_format.css
+*/
+
+/* Format lists, background, and text */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #000000;
+}
+
+main {
+    overflow: auto;
+	position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+header {
+    background-color: #004080;
+    padding: 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+		
+		
+    .textbox {
+        border: 2px solid #000000;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        overflow: auto; 
+    }
+
+.textbox h3 {
+    margin-bottom: 20px;
+}
+
+    .image-description {
+        text-align: center;
+    }
+
+
+/* Use pseudo classes/elements */
+button:hover {
+    background-color: #00FFFF;
+    color: #ffffff;
+}
+
+/* Use contextual/attribute selectors */
+footer {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #004080;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #004080;
+  color: white !important
+}
+#countdown {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#countdown-timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#countdown-timer > div {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* focus psuedo class  */
+input:valid:focus {
+  border-color: green; 
+}
+
+
+input:invalid:focus {
+  border-color: red; 
+}

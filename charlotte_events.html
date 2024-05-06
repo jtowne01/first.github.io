@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+   @charset “utf-8”;
+    New Perspectives on HTML5 and CSS3, 8th Edition
+    Project Part 1
+    City of Charlotte 
+    Author: Jason Towne
+    Date:   3/24/2024
+    Filename: charlotte_events.html
+   -->
+   <!-- This is the metadata content -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="Charlotte, North Carolina, Queen City, CLT" />
+   <title>The City of Charlotte</title>
+   
+      <!-- These are links to the .css files -->
+   <link href="charlotte_layout.css" rel="stylesheet"/>
+   <link href="charlotte_format.css" rel="stylesheet"/>
+</head>
+<body>
+
+         <nav class="horizontalNavigation">
+		  <main id="infographic">
+      <div id="info1" class="infobox">
+      <h1>Welcome to Charlotte!</h1>
+<!-- These are the navigation links to the three HTML files in this project -->
+      <ul>
+         <li><a href="charlotte_sports.html">Charlotte Sports</a></li>
+         <li><a href="charlotte_attractions.html">Charlotte Attractions</a></li>
+         <li><a href="charlotte_home.html">History of Charlotte</a></li>
+		 <li><a href="charlotte_events.html">Charlotte Events</a></li>
+
+    </div>
+  </div>
+</section>
+      </ul>
+  	    <br>
+			 <img src="clt_crown.jpg" 
+			  width="300" "height=300" /> 
+			  
+		 </nav>
+      <div class="textbox">
+	           
+
+ <div id="calendar"></div>
+	  <main>
+         <p>In Charlotte, there are many events you can attend, participate in, and get interactions with other people in our community. Here, you can plan, add, and find local events.  
+		 </p>
+
+		 <br>
+<div class="month">
+  <ul>
+
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>May<br><span style="font-size:18px">2024</span></li>
+<br>	  	
+		<!-- this is the current day and time countdown --!>
+		 	<strong><div id="currentDateTime"></div></strong>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li><span class="active">5</span></li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+
+</ul>
+
+
+
+&nbsp
+<h3>Add an Event:</h3>
+<!-- This is the field that include text, date/time, radio buttons, spinners, range sliders, and check boxes -->
+<form id="eventForm">
+<!-- event name and event date inputs are both required -->
+  <label for="eventName">Event Name:</label>         <!-- Validates field length by using minlength and maxlength !-->
+  <input type="text" id="eventName" name="eventName" required minlength="1" maxlength="50"> <!-- this validates the field length for adding event names  -->
+
+  <label for="eventDate">Event Date:</label> 
+  <input type="datetime-local" id="eventDate" name="eventDate" required> 
+
+<div>
+  <label>Event Type:</label>
+
+
+<input type="radio" id="radioMusic" name="radioMusic" value="music">
+<label for="radioMusic">Music</label>
+
+<input type="radio" id="eventTypeArt" name="eventTypeArt" value="art">
+<label for="eventTypeArt">Art</label>
+
+<input type="radio" id="eventTypeFestival" name="eventTypeFestival" value="festival">
+<label for="eventTypeFestival">Festival</label>
+
+
+<!-- this is the datalist with input  -->
+<input id="eventTypeMusic" name="eventTypeMusic" list="eventTypes" placeholder="Other">
+<datalist id="eventTypes">
+  <option value="Parade"></option>
+  <option value="Charity"></option>
+  <option value="Party"></option>
+  <option value="Sports"></option>
+  <option value="Conference"></option>
+    <option value="None of the above"></option>
+</datalist>
+</div>
+
+  <label for="maxAttendees">Max Attendees:</label>
+  <input type="number" id="maxAttendees" name="maxAttendees" min="1" step="1">
+
+ <br>
+<label for="ticketPrice">Ticket Price:</label>
+<div class="range-container">
+  <input type="range" id="ticketPrice" name="ticketPrice" min="0" max="100" step="5" value="0">
+    <!-- This is where the mobile keyboard input function is also located -->
+  <input type="number" id="ticketPriceInput" name="ticketPriceInput" min="0" max="100" step="5" value="0" inputmode="numeric" pattern="[0-9]*">
+  <span id="ticketPriceValue">$0</span>
+</div>
+
+  <label>Amenities:</label>
+  <div>
+    <input type="checkbox" id="amenityFood" name="amenityFood" value="food">
+    <label for="amenityFood">Food</label>
+    <input type="checkbox" id="amenityDrink" name="amenityDrink" value="drink">
+    <label for="amenityDrink">Drinks</label>
+    <input type="checkbox" id="amenityParking" name="amenityParking" value="parking">
+    <label for="amenityParking">Parking</label>
+  </div>
+
+  <button type="submit">Add Event</button>
+</form>
+  </div>
+</div>
+
+		</main>
+      </div>
+   </article>
+   		 <section id="countdown">
+  <div class="textbox">
+  <h2>Next Festival in Charlotte:</h2>
+  <div id="countdown-timer">
+    <div>
+      <span id="dLeft"></span>
+      <span>Days</span>
+    </div>
+    <div>
+
+      <span id="hLeft"></span>
+      <span>Hours</span>
+    </div>
+    <div>
+      <span id="mLeft"></span>
+      <span>Minutes</span>
+    </div>
+    <div>
+      <span id="sLeft"></span>
+      <span>Seconds</span>
+
+   <script src="C:\Users\jason\Desktop\Charlotte Website\charlotte_js.js"></script>
+   </body>
+
+
+</html>

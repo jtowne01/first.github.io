@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+   @charset “utf-8”;
+    New Perspectives on HTML5 and CSS3, 8th Edition
+    Project Part 1
+    City of Charlotte 
+    Author: Jason Towne
+    Date:   3/24/2024
+    Filename: charlotte_attractions.html
+   -->
+
+<!-- This is the metadata content -->
+ <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="Charlotte, North Carolina, Queen City, CLT" />
+   <title>The City of Charlotte</title>
+
+   <!-- These are links to the .css files -->
+   <link href="charlotte_layout.css" rel="stylesheet"/>
+   <link href="charlotte_format.css" rel="stylesheet"/>
+   
+
+</head>
+<body>
+
+         <nav class="horizontalNavigation">
+		  <main id="infographic">
+      <div id="info1" class="infobox">
+      <h1>Charlotte Attractions</h1>
+
+<!-- These are the navigation links to the three HTML files in this project -->
+      <ul>
+         <li><a href="charlotte_sports.html">Charlotte Sports</a></li>
+         <li><a href="charlotte_attractions.html">Charlotte Attractions</a></li>
+         <li><a href="charlotte_home.html">History of Charlotte</a></li>
+		 <li><a href="charlotte_events.html">Charlotte Events</a></li>
+      </ul>
+  	       	    <br>
+			 <img src="clt_crown.jpg" 
+			  width="300" "height=300" /> 
+		 </nav>
+
+	<div class="textbox">
+
+	  <main>
+         <h3>When it’s time to explore some of the great experiences Charlotte has to offer, there are many places to go and check out! 
+		 Ranging from historical sites, nature, museums, and thrill-seeking adventures, Charlotte has it all. Depending on what you want to do, you can make the most out of your day by checking out these attractions:
+		 </h3>
+	<ul>
+<strong><em>Carowinds:</em> </strong> a famous amusement park located in Charlotte and crossing over into South Carolina, you can enjoy a day of thrills, concessions, and even a refreshing time at their big waterpark. <br>
+
+<strong><em>Daniel Stowe Botanical Garden:</em> </strong> if you’re looking for a peaceful and scenic experience with nature, the Daniel Stowe Botanical Garden is worth a visit. <br>
+
+<strong><em>Discovery Place:</em> </strong> an interactive and educational exhibit with plenty of fun experiences, educational activities, and entertaining activities that you can watch or participate in. The Discovery Place has exhibits for animals, physics, biology, presentations, and even a cinema. <br>
+
+<strong><em>Charlotte Museum of History:</em> </strong> at this Museum, you can learn about the history of Charlotte, the culture, artifacts, and the uprising of Charlotte from hundreds of years ago up to the present day. <br>
+
+<strong><em>Nascar Hall of Fame:</em> </strong> At this famous attraction for car racing fans, you can enjoy the history of Nascar, learn about some of the most iconic drivers, check out artifacts, and experience many interactive activities with your time here. <br>
+	<br>
+	</ul>
+	
+	<!-- These are the inline images -->
+
+     <img src="carowinds.jpg" alt="trulli" class="image-with-border"
+		 height="200" width="200"    <figcaption><em>&nbsp; Carowinds Amusement Park,</em> <strong>&copy; Charlotte Observer </strong> </figcaption> <br>
+		   
+     <img src="botanical_garden.jpg" alt="trulli" class="image-with-border"
+		 height="200" width="200"    <figcaption><em>&nbsp; David Stowe Botanical Garden,</em> <strong>&copy; Charlottes Got a Lot </strong> </figcaption> <br>
+		 
+	    <img src="discovery_place.jpg" alt="trulli" class="image-with-border"
+		
+
+<!-- In the figcaption elements, you can find character references such as &copy and &nbsp -->
+
+		</main>
+		</div>
+      </div>
+   </article>
+   <aside>
+ <!-- This is one fieldset, the second one is located on the charlotte events page -->  
+ <div class="textbox">
+ 		          <fieldset>
+    <legend><strong>Suggest New Attractions</strong></legend>
+    <div>
+	 	<!-- This is the created and formatted text area -->
+        <label for="attractionName">Attraction Name:</label>
+        <input type="text" id="attractionName" name="attractionName" required>
+    </div>
+    <div>
+	 	<!-- This is the selection list -->
+        <label for="attractionType">Type of Attraction:</label>
+       
+		<select id="attractionType" name="attractionType">
+            <option value="Outdoor">Outdoor</option>
+            <option value="Museum">Museum</option>
+            <option value="Restaurant">Restaurant</option>
+			    <option value="Nightlife">Nightlife</option>
+       <option value="Shopping">Shopping</option>
+	       <option value="Entertainment">Entertainment</option>
+	       <option value="Other">Other</option>
+		   
+        </select>
+    </div>
+    <div>
+        <label for="attractionDescription">Description:</label>
+        <textarea id="attractionDescription" name="attractionDescription" rows="4"></textarea>
+		<!-- These are the submit / reset buttons -->
+		   <button type="submit">Submit</button> 
+           <button type="reset">Reset</button>		   
+   </aside>
+   <footer>
+   </footer>
+</body>
+</html>
